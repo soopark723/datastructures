@@ -1,0 +1,314 @@
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# Set Up
+
+## Link Google Drive to Google Colab
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+## Modify sys.path to Import External Modules
+
+
+
+import sys
+sys.path.append("/content/drive/MyDrive/대학원/자료구조/Week 4")
+
+# Import Array.py Module
+
+import numpy as np
+
+class MyArray:
+    def __init__(self, input_list):
+        self.array = np.array(input_list, dtype="i")
+
+    def myInsert(self, x, i):
+        new_array = np.empty(len(self.array) + 1, dtype="i")
+        new_array[:len(self.array)] = self.array
+        n = len(new_array)
+
+        # Shift elements to the right
+        for idx in range(n - 2, i - 1, -1):
+            new_array[idx + 1] = new_array[idx]
+
+        new_array[i] = x
+        self.array = new_array  # Update self.array
+        return self.array
+
+    def myIndex(self, x):
+        n = len(self.array)
+        for idx in range(n):
+            if self.array[idx] == x:
+                return idx
+        return -1  # If the key is not found
+
+    def myDelete(self, i):
+        n = len(self.array)
+
+        # Shift elements to the left
+        for idx in range(i + 1, n):
+            self.array[idx - 1] = self.array[idx]
+
+        self.array = self.array[:n - 1]  # Update self.array
+        return self.array
+
+    def myRemove(self, x):
+        i = self.myIndex(x)  # O(n)
+        if i == -1:
+            print("Element not found.")
+            return self.array
+
+        print("Element found at position:", i)
+        self.myDelete(i)  # O(n)
+        return self.array
+
+# Import the Array class from the Array.py file
+from Array import *
+from Array import MyArray
+
+# Create an instance of the Array class
+arr = MyArray([1, 2, 3, 4, 5])
+
+# Print the original array
+print("Original array:", arr.array)
+
+# Insert 6 at the last index (after the last element)
+arr.myInsert(6, len(arr.array))  # Inserts 6 at the end
+print("After insertion:", arr.array)
+
+# Remove element 5 from the array
+arr.myRemove(5)  # Removes element 5 from the array
+print("After removal:", arr.array)
+
+# Find index for element 3
+arr.myIndex(3)
+
+# Example 1: Time Complexity
+
+What is the time complexity of access, search, insertion, deletion of array data structure? Explain why.
+
+
+import numpy as np
+
+class MyArray:
+    def __init__(self, input_list):
+        self.array = np.array(input_list, dtype="i")
+        # O(1)
+
+    def myInsert(self, x, i):
+        new_array = np.empty(len(self.array) + 1, dtype="i")
+        new_array[:len(self.array)] = self.array
+        n = len(new_array)
+
+        # Shift elements to the right
+        for idx in range(n - 2, i - 1, -1):
+            new_array[idx + 1] = new_array[idx]
+
+        new_array[i] = x
+        self.array = new_array  # Update self.array
+        return self.array
+        # insertion: best case O(1), worse case O(n) --> O(n)
+        # best case - one insertion needed only, worst case - iteration through whole array needed to update
+
+    def myIndex(self, x):
+        n = len(self.array)
+        for idx in range(n):
+            if self.array[idx] == x:
+                return idx
+        return -1  # If the key is not found
+        # search: best case O(1), worse case O(n) --> O(n)
+        # best case - one indexing search needed only, worst case - iteration through whole array needed to update
+
+    def myDelete(self, i):
+        n = len(self.array)
+
+        # Shift elements to the left
+        for idx in range(i + 1, n):
+            self.array[idx - 1] = self.array[idx]
+
+        self.array = self.array[:n - 1]  # Update self.array
+        return self.array
+        # deletion: best case O(1), worse case O(n) --> O(n)
+        # best case - one deletion needed only, worst case - iteration through whole array needed to update
+
+    def myRemove(self, x):
+        i = self.myIndex(x)
+        if i == -1:
+            print("Element not found.")
+            return self.array
+
+        print("Element found at position:", i)
+        self.myDelete(i)
+        return self.array
+        # removal: O(n) (search first, and then delete; O(n) + O(n))
+
+
+
+# Example 2
+
+Explore and compare the differences between Python lists and array data structures. Use online resources and feel free to utilize generative AI chatbots to aid in your understanding. Consider the following aspects in your exploration:
+
+* **Storage structure**: How do Python lists and arrays store data in memory? Are they contiguous or non-contiguous?
+
+* **Performance**: How do their performance characteristics differ for various operations such as indexing, insertion, and deletion?
+
+* **Type of elements**: Are Python lists and arrays restricted to a single data type, or can they store elements of mixed types? How does this affect performance?
+
+* **Dynamic vs Static**: How do Python lists (dynamic arrays) and static arrays differ in terms of resizing and memory allocation?
+
+* **Access and manipulation**: How do access and manipulation operations differ between Python lists and arrays?
+
+
+
+
+---
+
+**Storage structure: **
+
+Python Lists
+Memory Storage: Non-contiguous
+
+Implementation: Python lists are dynamic arrays implemented as an array of pointers to objects, not the actual data.
+Each element in a list points to a memory location where the actual object lives.
+The list itself holds these pointers in a contiguous block, but the actual objects can be scattered in memory.
+
+Arrays (from array module or NumPy)
+Memory Storage: Contiguous
+
+Standard array module:
+Stores data in a contiguous block of memory.
+All elements must be of the same type (e.g., all integers or floats).
+
+NumPy arrays:
+Also use contiguous memory for efficiency.
+
+Optimized for numerical computations and can interface with C for speed.<br><br>
+
+---
+
+
+**Performance: **
+🔸 Indexing (arr[i])
+All three types offer constant-time (O(1)) random access via indexing because they use underlying array-like memory models.
+
+🔸 Insertion
+Python list: Fast when appending (append() is amortized O(1)), but inserting elsewhere shifts elements (O(n)).
+
+array.array: Similar to list, but type-checked and generally faster for large homogeneous data.
+
+NumPy array: Insertion is costly because NumPy arrays are fixed-size; inserting often requires copying the entire array.
+
+🔸 Deletion
+list.pop() from the end is O(1), but removing from the middle or start is O(n) due to shifting.
+
+array.array behaves similarly.
+
+NumPy: Deletion = creating a new array without the deleted item, so it's also O(n).
+<br><br>
+
+---
+
+
+**Type of elements: **
+Lists can store multiple data types, and arrays can store only one data type. Arrays are thus more efficient, performance-wise.
+
+🔹 Python list
+Stores references (pointers) to objects.
+Each item can be a different type: int, str, float, even another list.
+Super flexible, but this costs performance:
+Accessing values means dereferencing pointers.
+CPU caches aren’t fully utilized due to scattered memory locations.
+Can't optimize operations like vector math.
+
+
+🔹 array.array
+Stores raw values in memory of a single data type (defined by a type code like 'i' for int).
+Much faster and more memory-efficient than lists for large homogeneous data.
+
+
+🔹 numpy.ndarray
+Generally expects one data type (dtype), e.g. int32, float64, etc.
+Can technically store mixed types using dtype=object, but:
+You lose all performance benefits.
+Becomes functionally similar to a Python list of objects.
+<br><br>
+
+
+
+---
+
+
+**Dynamic vs Static: **
+Lists, or dynamic arrays, can be resized but are less memory-efficient. Static arrays have a fixed size, are inflexible, and need manual resizing.
+<br><br>
+
+---
+
+
+**Access and manipulation: **
+Access is similar for lists and arrays, but manipulation is more efficient for lists because arrays have fixed sizes.
+
+
+# Example 3
+
+Create a function that output unique elements in a given array. Unique means distinct elements. What is the time complexity of the algorithm?
+
+
+def unique(arr):
+    unique_elements = []
+    for element in arr:
+        if element not in unique_elements:
+            unique_elements.append(element)
+    return unique_elements
+
+    #time complexity: O(n^2)
+
+a = [1, 2, 2, 3, 4, 5, 5, 6, 7, 7]
+unique(a)
+
+# Example 4
+
+Create a function that returns how many number of elements are odd and even elements in the array.
+
+
+def EvenOdd(arr):
+    even_count = 0
+    odd_count = 0
+    for element in arr:
+        if element % 2 == 0:
+            even_count += 1
+        else:
+            odd_count +=1
+    print("Even:", even_count, ", Odd:", odd_count)
+
+    # time complexity: O(n)
+
+a = [1, 2, 2, 3, 4, 5, 5, 6, 7, 7]
+EvenOdd(a)
+------------------
+
+
+  [36mCell[39m[36m [39m[32mIn[3][39m[32m, line 189[39m
+[31m    [39m[31m🔸 Indexing (arr[i])[39m
+    ^
+[31mSyntaxError[39m[31m:[39m invalid character '🔸' (U+1F538)
+
+
