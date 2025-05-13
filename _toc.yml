@@ -1,0 +1,36 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+    - caption: Week 1
+      chapters:
+        - file: mynotebooks-1
+    - caption: Week 2
+      chapters:
+        - file: mynotebooks-2
+    - caption: Week 3
+      chapters:
+        - file: mynotebooks-3
+    - caption: Week 4
+      chapters:
+        - file: mynotebooks-4
+    - caption: Week 5
+      chapters:
+        - file: mynotebooks-5
+    - caption: Week 6
+      chapters:
+        - file: mynotebooks-6
+    - caption: Week 7
+      chapters:
+        - file: mynotebooks-7
+    - caption: Week 8
+      chapters:
+        - file: mynotebooks-8
+    - caption: Week 9
+      chapters:
+        - file: mynotebooks-9
+    - caption: Week 10
+      chapters:
+        - file: mynotebooks-10

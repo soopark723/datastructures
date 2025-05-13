@@ -1,0 +1,91 @@
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# A function that reverses a given stack using another stack. This function should modify the original stack.
+
+def insertAtBottom(stack, item):
+    if stack.isEmpty():
+        stack.push(item)
+    else:
+        temp = stack.pop()
+        insertAtBottom(stack, item)
+        stack.push(temp)
+
+def reverseInPlace(stack):
+    temp_stack = ListStack()
+
+    # Move all elements from stack to temp_stack
+    while not stack.isEmpty():
+        temp_stack.push(stack.pop())
+
+    # Move them back to the original stack
+    while not temp_stack.isEmpty():
+        item = temp_stack.pop()
+        insertAtBottom(stack, item)
+
+    return stack
+
+stack = ListStack()
+stack.push(100); stack.push(200); stack.push(300); stack.push(400)
+stack.printStack()
+
+print("\nReversed (in-place) stack:")
+reverseInPlace(stack)
+stack.printStack()
+
+    def clone(self):
+        new_stack = ListStack()
+        new_stack.stack = self.stack.copy()
+        return new_stack
+
+    def reverse(original_stack):
+        # Clone the stack to preserve the original
+        cloned_stack = original_stack.clone()
+        reversed_stack = ListStack()
+
+        # Reverse the cloned stack
+        while not cloned_stack.isEmpty():
+            reversed_stack.push(cloned_stack.pop())
+
+        return reversed_stack
+---
+
+    def insertAtBottom(stack, item):
+        if stack.isEmpty():
+            stack.push(item)
+        else:
+            temp = stack.pop()
+            insertAtBottom(stack, item)
+            stack.push(temp)
+
+    def reverseInPlace(stack):
+        if not stack.isEmpty():
+            temp = stack.pop()
+            reverseInPlace(stack)
+            insertAtBottom(stack, temp)
+------------------
+
+
+  [36mCell[39m[36m [39m[32mIn[9][39m[32m, line 33[39m
+[31m    [39m[31mdef clone(self):[39m
+    ^
+[31mIndentationError[39m[31m:[39m unexpected indent
+
+

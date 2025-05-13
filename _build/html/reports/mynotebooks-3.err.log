@@ -1,0 +1,337 @@
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# Fixing random state for reproducibility
+# Set Up
+
+## Link Google Drive to Google Colab
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+## Modify sys.path to Import External Modules
+
+
+
+import sys
+sys.path.append("/content/drive/MyDrive/대학원/자료구조/Week 3")
+
+# Example 1: Fibonacci
+
+In the lecture, we showed the time complexity of the below algorithm for Fibonacci series is $O(2^n)$. In similar way, find Big Omega $\Omega(\cdot)$ of this algorithm.
+
+
+
+# Recursion
+def fib_recursive(n):
+  if n < 0:
+    print("Incorrect input")
+  elif n == 0:
+    return 0
+  elif n == 1 or n == 2:
+    return 1
+  else:
+    return fib_recursive(n-1)+fib_recursive(n-2)
+
+
+## Solution
+
+1. Time Complexity (Big O)
+The function fib_recursive(n) calls itself twice for each input n > 2:
+
+The first call is fib_recursive(n-1)
+
+The second call is fib_recursive(n-2)
+
+This creates a binary recursion tree, where each level of the tree produces two recursive calls. Let's break this down step-by-step.
+
+Recursion Tree Structure
+At the first level, the function is called with n.
+
+The second level involves two calls: fib_recursive(n-1) and fib_recursive(n-2).
+
+The third level has four calls: fib_recursive(n-2), fib_recursive(n-3), fib_recursive(n-3), and fib_recursive(n-4).
+
+This pattern continues until we reach the base cases (n == 0 or n == 1), which are the stopping conditions of the recursion.
+
+Growth of Calls
+The number of calls grows exponentially. Specifically, for each call, there are two subsequent calls that are each evaluated recursively.
+
+The recurrence relation for the time complexity is approximately:
+
+𝑇
+(
+𝑛
+)
+=
+𝑇
+(
+𝑛
+−
+1
+)
++
+𝑇
+(
+𝑛
+−
+2
+)
++
+𝑂
+(
+1
+)
+T(n)=T(n−1)+T(n−2)+O(1)
+where the additional
+𝑂
+(
+1
+)
+O(1) accounts for the constant time for checking conditions (n == 0, n == 1, n == 2).
+
+This recurrence has a solution that is exponential, specifically O(2^n). This means the function's time complexity grows exponentially with respect to n.
+
+Final Time Complexity:
+O(2^n).
+
+
+
+---
+
+
+
+Big Omega (Ω) represents the best-case time complexity, or the lower bound.
+
+For this recursive Fibonacci function:
+
+In the best-case scenario, the input n could be small (like n == 0 or n == 1), which would directly return a result without any recursion.
+
+In this case, the time complexity for fib_recursive(0) or fib_recursive(1) is O(1), which means only a constant amount of work is done.
+
+So, the Big Omega (Ω) time complexity for the best case is:
+
+Ω(1).
+
+This is the minimum amount of work done when n is small and reaches the base case immediately.
+
+
+
+---
+
+
+
+The space complexity is based on the depth of the recursion stack since each recursive call adds a new frame to the stack.
+
+In the worst case, the recursion depth is equal to n (for example, when the input is a large number like n = 100).
+
+So, the space complexity is O(n) due to the recursive calls that go as deep as n.
+
+
+
+# Example 2: Factorial
+
+* Write functions that calculates the factorial of n (i.e., n!)
+  - Approach 1: Using For loop
+  - Approach 2: Using Recursive algorithm
+
+$$
+\begin{align*}
+n!=
+\begin{cases}
+  1 & \text{if $n < 1$}\\
+  n*(n-1)! & \text{if $n \ge 1$}
+\end{cases}    
+\end{align*}
+$$
+
+* Time complexity analysis
+  - Provide comparison of both practical (e.g. for n=600) and theoretical time complexity analysis for each approach
+
+## Solution
+
+
+
+
+
+def factorial_for(num):
+  if num < 0:
+    return "Undefined"
+  result = 1
+  for x in range(num, 0, -1):         # or for num in range(1, num+1, 1)       # O(n)
+    result *= x
+  return result
+
+def factorial_recursive(num):
+  if num <= 1:
+    return 1
+  else:
+    return num * factorial_recursive(num - 1)        # O(n) * O(1)
+
+import time
+start_time = time.time()
+factorial_for(600)
+time_for = time.time() - start_time
+
+start_time = time.time()
+factorial_recursive(600)
+time_recursive = time.time() - start_time
+
+print("Time for iterative approach:", round(time_for, 4), "minutes")
+print("Time for recursive approach:", round(time_recursive, 4), "minutes")
+
+# Example 3: Gugu-dan
+
+We can write an iterative algorithm that prints out a multiplication table (i.e., gugu-dan) as below. Write a recursive algorithm for the gugu-dan. For example, 'Table of 3' should print the following. What is the Big O of the gugu-dan algorithms?
+
+## Solution
+
+# Iterative
+def gugu_iterative(dan):
+    for num in range(1, 10):
+        print("%d x %d = %d" % (dan, num, dan * num))
+gugu_iterative(3)
+
+print("\n")
+# Recursive
+def gugu_recursive(dan, num=1):
+  if num > 9:
+    return
+  print("%d x %d = %d" % (dan, num, dan * num))
+  gugu_recursive(dan, num+1)
+gugu_recursive(3)
+
+
+
+---
+
+
+
+Time Complexity of gugu_iterative:
+The function has a single loop that runs from num = 1 to num = 9 (inclusive), which means it performs 9 iterations.
+
+Inside each iteration, it prints the result of dan * num, and each print operation takes O(1) time.
+
+The loop runs a constant number of times (9), regardless of the size of the input dan.
+
+Time Complexity: O(1) because the loop runs a fixed number of times (9).
+
+Since the number of iterations is constant (9), the time complexity is constant, or O(1).
+
+
+---
+
+
+
+Time Complexity of gugu_recursive:
+The recursive function calls itself starting from num = 1 and increments num by 1 with each call until num reaches 10.
+
+This results in a total of 9 recursive calls (since it stops when num > 9).
+
+Each recursive call performs O(1) work (printing the multiplication result).
+
+The number of recursive calls is proportional to the range from 1 to 9, which is a constant number of calls (9).
+
+Time Complexity: O(1) because the number of recursive calls is fixed (9).
+
+
+
+---
+
+Summary:
+Iterative version: The time complexity is O(1) because the loop runs a fixed number of times (9 iterations).
+
+Recursive version: The time complexity is also O(1) because the recursion depth is constant (9 recursive calls).
+
+Both functions have constant time complexity O(1) because they operate over a fixed number of iterations or recursive calls (9).
+
+
+
+---
+
+
+
+# Example 4: Fibonacci O(n)
+
+Can you write an algorithm for the Fibonacci series with a time complexity of $O(n)$ instead of $O(2^n)$? For example, Fibonacci sequence up to the 10th term (index 0 to 10) is $[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]$,
+
+Hint: [Helpful resource](https://chanos.tistory.com/entry/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98-%EC%88%98%EC%97%B4%EC%9D%98-%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-%EC%99%84%EB%B2%BD%ED%9E%88-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
+
+## Solution
+
+"""
+def fib_recursive2(n, initial_values=[0, 1]):
+  for x in range(n-2):
+    initial_values.append(initial_values[-1] + initial_values[-2])
+  return sum(initial_values)
+"""
+def fib_recursive2(n, initial_values=[0, 1]):
+  if n <= 0:
+    return 0
+  elif n == 1:
+    return 0
+  elif n == 2:
+    return 1
+  for x in range(n-2):
+    next_value = initial_values[-1] + initial_values[-2]
+    initial_values.append(next_value)
+  return sum(initial_values)
+
+print("fib_recursive: ", fib_recursive(10))
+print("fib_recursive2: ", fib_recursive2(10))
+
+
+
+---
+
+Iterative Solution (O(n) Time Complexity)
+Here’s the iterative approach to calculate the Fibonacci series in O(n) time:
+
+We initialize two variables, a and b, to represent fib(0) and fib(1) (i.e., 0 and 1).
+
+We use a loop that starts from 2 and goes up to n, updating a and b in each iteration to compute the next Fibonacci number.
+
+At the end of the loop, b will contain the nth Fibonacci number.
+
+Time Complexity: O(n) because we only iterate through the loop n-1 times, and each iteration takes constant time.
+
+Space Complexity: O(1) because we only use a constant amount of extra space for the two variables a and b.
+
+def fib_iterative(n):
+    if n <= 1:
+        return n
+
+    # Starting values for Fibonacci series
+    a, b = 0, 1
+
+    # Compute Fibonacci numbers iteratively
+    for _ in range(2, n + 1):
+        a, b = b, a + b
+
+    return b
+------------------
+
+
+  [36mCell[39m[36m [39m[32mIn[1][39m[32m, line 18[39m
+[31m    [39m[31mIn the lecture, we showed the time complexity of the below algorithm for Fibonacci series is $O(2^n)$. In similar way, find Big Omega $\Omega(\cdot)$ of this algorithm.[39m
+       ^
+[31mSyntaxError[39m[31m:[39m invalid syntax
+
+
