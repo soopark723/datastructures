@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -60,7 +60,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'mynotebooks-7';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Jupyter Book" href="mynotebooks-8.html" />
     <link rel="prev" title="Stacks" href="mynotebooks-6.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -179,65 +178,46 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 1</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 1</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-1.html">Python</a></li>
 
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 2</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 2</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-2.html">Introduction to Python Code</a></li>
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 3</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 3</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-3.html">Recursion</a></li>
 
-
-
-
-
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 4</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 4</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-4.html">Arrays</a></li>
 
-
-
-
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 5</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 5</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-5.html">Linked Lists</a></li>
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 6</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 6</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-6.html">Stacks</a></li>
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 7</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 7</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Queues</a></li>
 
 
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 8</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="mynotebooks-8.html">Jupyter Book</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 9</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="mynotebooks-9.html">Trees</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 10</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="mynotebooks-10.html">Graphs</a></li>
 </ul>
 
     </div>
@@ -442,6 +422,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reverse-queue">Reverse: Queue</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#palindrome">Palindrome</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#queue-example">Queue Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-with-queues">Practice With Queues</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#swap-elements-in-a-linked-queue">Swap Elements in a Linked Queue</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -463,8 +447,8 @@ document.write(`
 <h1>Class Definitions<a class="headerlink" href="#class-definitions" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ListNode</span><span class="p">:</span>
-	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">nextNode</span><span class="p">:</span><span class="s2">&quot;ListNode&quot;</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ListNode</span><span class="p">:</span>
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">nextNode</span><span class="p">:</span><span class="s2">&quot;ListNode&quot;</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">nextNode</span>
 </pre></div>
@@ -473,18 +457,18 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">SimpleLinkedList</span><span class="p">:</span>
-	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SimpleLinkedList</span><span class="p">:</span>
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s2">&quot;dummy&quot;</span><span class="p">,</span> <span class="n">nextNode</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">=</span> <span class="mi">0</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
 		<span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">numItems</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 		<span class="n">newNode</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">prev</span><span class="o">.</span><span class="n">next</span><span class="p">)</span>
 		<span class="n">prev</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">newNode</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">+=</span> <span class="mi">1</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
   		<span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">numItems</span><span class="p">:</span>
     			<span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
     			<span class="n">newNode</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">prev</span><span class="o">.</span><span class="n">next</span><span class="p">)</span>
@@ -493,7 +477,7 @@ document.write(`
   		<span class="k">else</span><span class="p">:</span>
     			<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;: out of bound in insert()&quot;</span><span class="p">)</span> 
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
 		<span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">numItems</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
 			<span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 			<span class="n">curr</span> <span class="o">=</span> <span class="n">prev</span><span class="o">.</span><span class="n">next</span>
@@ -504,7 +488,7 @@ document.write(`
 		<span class="k">else</span><span class="p">:</span>
 			<span class="k">return</span> <span class="kc">None</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
   		<span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
   		<span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
     			<span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
@@ -514,13 +498,13 @@ document.write(`
   		<span class="k">else</span><span class="p">:</span>
     			<span class="k">return</span> <span class="kc">None</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">getNode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListNode</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">getNode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListNode</span><span class="p">:</span>
 		<span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span>
 		<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
 			<span class="n">curr</span> <span class="o">=</span> <span class="n">curr</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">return</span> <span class="n">curr</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
 		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
 			<span class="k">return</span> <span class="kc">None</span>
 		<span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
@@ -528,24 +512,24 @@ document.write(`
 		<span class="k">else</span><span class="p">:</span>
 			<span class="k">return</span> <span class="kc">None</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">printList</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">printList</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">while</span> <span class="n">curr</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
 			<span class="nb">print</span><span class="p">(</span><span class="n">curr</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
 			<span class="n">curr</span> <span class="o">=</span> <span class="n">curr</span><span class="o">.</span><span class="n">next</span>
 		<span class="nb">print</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">extend</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span><span class="s1">&#39;SimpleLinkedList&#39;</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">extend</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span><span class="s1">&#39;SimpleLinkedList&#39;</span><span class="p">):</span>
 		<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">size</span><span class="p">()):</span>
 			<span class="bp">self</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
  
-	<span class="k">def</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="n">a</span> <span class="o">=</span> <span class="n">SimpleLinkedList</span><span class="p">()</span>
 		<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">numItems</span><span class="p">):</span>
 			<span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
 		<span class="k">return</span> <span class="n">a</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">reverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="n">a</span> <span class="o">=</span> <span class="n">SimpleLinkedList</span><span class="p">()</span>
 		<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">numItems</span><span class="p">):</span>
 			<span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
@@ -553,7 +537,7 @@ document.write(`
 		<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">size</span><span class="p">()):</span>
 			<span class="bp">self</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
 		<span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">numItems</span><span class="p">):</span>
 			<span class="k">if</span> <span class="n">curr</span><span class="o">.</span><span class="n">data</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span>
@@ -562,17 +546,17 @@ document.write(`
 				<span class="n">curr</span> <span class="o">=</span> <span class="n">curr</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">return</span> <span class="kc">None</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">==</span> <span class="mi">0</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">numItems</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="s2">&quot;dummy&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">=</span> <span class="mi">0</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 		<span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
 		<span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">next</span> 
 		<span class="k">while</span> <span class="n">curr</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
@@ -580,32 +564,19 @@ document.write(`
 					<span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
 			<span class="n">curr</span> <span class="o">=</span> <span class="n">curr</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">return</span> <span class="n">cnt</span>
-	
-
-<span class="c1"># a = SimpleLinkedList()</span>
-<span class="c1"># a.append(1); a.append(3); a.append(5); a.append(7); a.append(11)</span>
-<span class="c1"># a.printList()</span>
-<span class="c1"># a.insert(4,9)</span>
-<span class="c1"># a.size()</span>
-<span class="c1"># a.isEmpty()</span>
-<span class="c1"># a.index(3)</span>
-<span class="c1"># a.pop(1)</span>
-<span class="c1"># a.printList()</span>
-<span class="c1"># a.remove(9)</span>
-<span class="c1"># a.printList()</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">CircularLinkedList</span><span class="p">:</span>
-	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CircularLinkedList</span><span class="p">:</span>
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="s2">&quot;dummy&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">tail</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tail</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">=</span> <span class="mi">0</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 		<span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">numItems</span><span class="p">):</span>
 			<span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 			<span class="n">newNode</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">prev</span><span class="o">.</span><span class="n">next</span><span class="p">)</span>
@@ -616,13 +587,13 @@ document.write(`
 		<span class="k">else</span><span class="p">:</span>
 			<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;: out of bound in insert()&quot;</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 		<span class="n">newNode</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tail</span><span class="o">.</span><span class="n">next</span><span class="p">)</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">tail</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">newNode</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">newNode</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">+=</span> <span class="mi">1</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
 		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
 			<span class="k">return</span> <span class="kc">None</span>
 		<span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
@@ -638,7 +609,7 @@ document.write(`
 		<span class="k">else</span><span class="p">:</span>
 			<span class="k">return</span> <span class="kc">None</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
 		<span class="p">(</span><span class="n">prev</span><span class="p">,</span> <span class="n">curr</span><span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">findNode</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 		<span class="k">if</span> <span class="n">curr</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
 			<span class="n">prev</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">curr</span><span class="o">.</span><span class="n">next</span>
@@ -649,7 +620,7 @@ document.write(`
 		<span class="k">else</span><span class="p">:</span>
 			<span class="k">return</span> <span class="kc">None</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
 		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
 			<span class="k">return</span> <span class="kc">None</span>
 		<span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
@@ -659,7 +630,7 @@ document.write(`
 		<span class="k">else</span><span class="p">:</span>
 			<span class="k">return</span> <span class="kc">None</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 		<span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
 		<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
 			<span class="k">if</span> <span class="n">element</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span>
@@ -667,35 +638,35 @@ document.write(`
 			<span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
 		<span class="k">return</span> <span class="o">-</span><span class="mi">12345</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">==</span> <span class="mi">0</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">numItems</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="s2">&quot;dummy&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">tail</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tail</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">=</span> <span class="mi">0</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 		<span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
 		<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
 			<span class="k">if</span> <span class="n">element</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span>
 					<span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
 		<span class="k">return</span> <span class="n">cnt</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">extend</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">extend</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
 		<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
 			<span class="bp">self</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
  
-	<span class="k">def</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="sa">b</span><span class="s1">&#39;CircularLinkedList&#39;</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="sa">b</span><span class="s1">&#39;CircularLinkedList&#39;</span><span class="p">:</span>
 		<span class="n">a</span> <span class="o">=</span> <span class="n">CircularLinkedList</span><span class="p">()</span>
 		<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
 			<span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
 		<span class="k">return</span> <span class="n">a</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">reverse</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 		<span class="n">head</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tail</span><span class="o">.</span><span class="n">next</span>
 		<span class="n">prev</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span> <span class="n">curr</span> <span class="o">=</span> <span class="n">prev</span><span class="o">.</span><span class="n">next</span><span class="p">;</span> <span class="nb">next</span> <span class="o">=</span> <span class="n">curr</span><span class="o">.</span><span class="n">next</span>
 		<span class="n">curr</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span> <span class="n">head</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tail</span><span class="p">;</span> <span class="bp">self</span><span class="o">.</span><span class="n">tail</span> <span class="o">=</span> <span class="n">curr</span>
@@ -703,7 +674,7 @@ document.write(`
 			<span class="n">prev</span> <span class="o">=</span> <span class="n">curr</span><span class="p">;</span> <span class="n">curr</span> <span class="o">=</span> <span class="nb">next</span><span class="p">;</span> <span class="nb">next</span> <span class="o">=</span> <span class="nb">next</span><span class="o">.</span><span class="n">next</span>
 			<span class="n">curr</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">prev</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">sort</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">sort</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 		<span class="n">a</span> <span class="o">=</span> <span class="p">[]</span>
 		<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
 			<span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
@@ -712,7 +683,7 @@ document.write(`
 		<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
 			<span class="bp">self</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">findNode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">ListNode</span><span class="p">,</span> <span class="n">ListNode</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">findNode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">ListNode</span><span class="p">,</span> <span class="n">ListNode</span><span class="p">):</span>
 		<span class="n">head</span> <span class="o">=</span> <span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tail</span><span class="o">.</span><span class="n">next</span>
 		<span class="n">curr</span> <span class="o">=</span> <span class="n">prev</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">while</span> <span class="n">curr</span> <span class="o">!=</span> <span class="n">head</span><span class="p">:</span>
@@ -722,13 +693,13 @@ document.write(`
 				<span class="n">prev</span> <span class="o">=</span> <span class="n">curr</span><span class="p">;</span> <span class="n">curr</span> <span class="o">=</span> <span class="n">curr</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">return</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
  
-	<span class="k">def</span><span class="w"> </span><span class="nf">getNode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListNode</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">getNode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListNode</span><span class="p">:</span>
 		<span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tail</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
 			<span class="n">curr</span> <span class="o">=</span> <span class="n">curr</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">return</span> <span class="n">curr</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">printList</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">printList</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tail</span><span class="o">.</span><span class="n">next</span>
 		<span class="n">curr</span> <span class="o">=</span> <span class="n">curr</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">while</span> <span class="n">curr</span><span class="o">.</span><span class="n">data</span> <span class="o">!=</span> <span class="s2">&quot;dummy&quot;</span><span class="p">:</span>
@@ -741,29 +712,29 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ListStack</span><span class="p">:</span>
-	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ListStack</span><span class="p">:</span>
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">push</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">push</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">top</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">top</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
 			<span class="k">return</span> <span class="kc">None</span>
 		<span class="k">else</span><span class="p">:</span>
 			<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 		<span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
   		<span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">printStack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">printStack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Elements from top to bottom: &quot;</span><span class="p">)</span>
 		<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
 			<span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
@@ -774,64 +745,32 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">LinkedStack</span><span class="p">:</span>
-	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		<span class="bp">self</span><span class="o">.</span><span class="n">stack</span> <span class="o">=</span> <span class="n">SimpleLinkedList</span><span class="p">()</span>
-
-	<span class="k">def</span><span class="w"> </span><span class="nf">push</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-		<span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-
-	<span class="k">def</span><span class="w"> </span><span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-	<span class="k">def</span><span class="w"> </span><span class="nf">top</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
-			<span class="k">return</span> <span class="kc">None</span>
-		<span class="k">else</span><span class="p">:</span>
-			<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-	<span class="k">def</span><span class="w"> </span><span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">()</span>
-
-	<span class="k">def</span><span class="w"> </span><span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
-
-	<span class="k">def</span><span class="w"> </span><span class="nf">printStack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Elements from top to bottom: &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
-		<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">size</span><span class="p">()):</span>
-			<span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ListQueue</span><span class="p">:</span>
-	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ListQueue</span><span class="p">:</span>
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span> <span class="o">=</span> <span class="p">[]</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">enqueue</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span> <span class="c1"># insert an element to the end of the queue</span>
+	<span class="k">def</span> <span class="nf">enqueue</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span> <span class="c1"># insert an element to the end of the queue</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">dequeue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># remove an element from the front of the queue</span>
+	<span class="k">def</span> <span class="nf">dequeue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># remove an element from the front of the queue</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> 
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">front</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># returns the front node of the queue without deleting it</span>
+	<span class="k">def</span> <span class="nf">front</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># returns the front node of the queue without deleting it</span>
 		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
 			<span class="k">return</span> <span class="kc">None</span>
 		<span class="k">else</span><span class="p">:</span>
 			<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span> <span class="c1"># returns true if queue is empty, else false.</span>
+	<span class="k">def</span> <span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span> 
 		<span class="k">return</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">);</span>
  
-	<span class="k">def</span><span class="w"> </span><span class="nf">dequeueAll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># clean the queue</span>
+	<span class="k">def</span> <span class="nf">dequeueAll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> 
 		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># length of the queue</span>
+	<span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> 
 		<span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">printQueue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># print elements from front to end</span>
+	<span class="k">def</span> <span class="nf">printQueue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Elements from front to end: &quot;</span><span class="p">)</span>
 		<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">)):</span>
 			<span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
@@ -841,32 +780,37 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">LinkedQueue</span><span class="p">:</span>
-	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span> <span class="o">=</span> <span class="n">CircularLinkedList</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LinkedQueue</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">queue</span> <span class="o">=</span> <span class="n">CircularLinkedList</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">enqueue</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span> <span class="c1"># insert an element to the end of the queue</span>
-		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">enqueue</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">dequeue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># remove an element from the front of the queue</span>
-		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">dequeue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">front</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># returns the front node of the queue without deleting it</span>
-		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">front</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span> <span class="c1"># returns true if queue is empty, else false.</span>
-		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">()</span>
+    <span class="k">def</span> <span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">dequeueAll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># clean the queue</span>
-		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+    <span class="k">def</span> <span class="nf">dequeueAll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># find size of the queue</span>
-		<span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">printQueue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># print elements from front to end</span>
-		<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">size</span><span class="p">()):</span>
-			<span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
-		<span class="nb">print</span><span class="p">()</span>
+    <span class="k">def</span> <span class="nf">printQueue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Elements from front to end:&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">size</span><span class="p">()):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -899,29 +843,29 @@ Tue Wed Thurs Fri
 <h1>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">LinkedQueue</span><span class="p">:</span>
-	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LinkedQueue</span><span class="p">:</span>
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span> <span class="o">=</span> <span class="n">CircularLinkedList</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">enqueue</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span> <span class="c1"># insert an element to the end of the queue</span>
+	<span class="k">def</span> <span class="nf">enqueue</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span> <span class="c1"># insert an element to the end of the queue</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">dequeue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># remove an element from the front of the queue</span>
+	<span class="k">def</span> <span class="nf">dequeue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># remove an element from the front of the queue</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">front</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># returns the front node of the queue without deleting it</span>
+	<span class="k">def</span> <span class="nf">front</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># returns the front node of the queue without deleting it</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span> <span class="c1"># returns true if queue is empty, else false.</span>
+	<span class="k">def</span> <span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span> <span class="c1"># returns true if queue is empty, else false.</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">dequeueAll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># clean the queue</span>
+	<span class="k">def</span> <span class="nf">dequeueAll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># clean the queue</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># find size of the queue</span>
+	<span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># find size of the queue</span>
 		<span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">printQueue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># print elements from front to end</span>
+	<span class="k">def</span> <span class="nf">printQueue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># print elements from front to end</span>
 		<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">size</span><span class="p">()):</span>
 			<span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
 		<span class="nb">print</span><span class="p">()</span>
@@ -954,32 +898,31 @@ Tue Wed Thurs Fri
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">queue</span> <span class="o">=</span> <span class="n">LinkedQueue</span><span class="p">()</span>
 <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Mon&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Tue&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Wed&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Thurs&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Fri&quot;</span><span class="p">)</span>
 <span class="n">queue</span><span class="o">.</span><span class="n">printQueue</span><span class="p">()</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">reverseQueue</span><span class="p">(</span><span class="n">queue</span><span class="p">):</span>
-    <span class="c1"># reversed = LinkedQueue()</span>
-    <span class="c1"># while queue.size() &gt; 0:</span>
-    <span class="c1">#     reversed.append(queue.dequeue())</span>
-    <span class="c1"># return reversed</span>
-
-    <span class="c1"># head = queue.dequeue()</span>
-    <span class="c1"># reversed = reverseQueue(queue)</span>
-    <span class="c1"># reversed.enqueue(head)</span>
-    <span class="c1"># return reversed</span>
-
-    <span class="k">if</span> <span class="n">queue</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
-        <span class="k">return</span>
-    <span class="n">item</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">dequeue</span><span class="p">()</span>
-    <span class="n">reverseQueue</span><span class="p">(</span><span class="n">queue</span><span class="p">)</span>
-    <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-
-<span class="n">reverseQueue</span><span class="p">(</span><span class="n">queue</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After Reversing the queue:&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mon Tue Wed Thurs Fri 
-After Reversing the queue:
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">reverseQueue</span><span class="p">(</span><span class="n">queue</span><span class="p">):</span>
+    <span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">queue</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
+        <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">queue</span><span class="o">.</span><span class="n">dequeue</span><span class="p">())</span>
+    <span class="k">while</span> <span class="n">stack</span><span class="p">:</span>
+        <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
+
+<span class="n">reverseQueue</span><span class="p">(</span><span class="n">queue</span><span class="p">)</span>
+<span class="n">queue</span><span class="o">.</span><span class="n">printQueue</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Fri Thurs Wed Tue Mon 
 </pre></div>
 </div>
 </div>
@@ -992,7 +935,7 @@ After Reversing the queue:
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">isPalindrome</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
     <span class="n">stack</span> <span class="o">=</span> <span class="n">ListStack</span><span class="p">()</span>
     <span class="n">queue</span> <span class="o">=</span> <span class="n">ListQueue</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)):</span>
@@ -1017,49 +960,67 @@ After Reversing the queue:
 </section>
 <section id="queue-example">
 <h2>Queue Example<a class="headerlink" href="#queue-example" title="Link to this heading">#</a></h2>
+</section>
+<section id="practice-with-queues">
+<h2>Practice With Queues<a class="headerlink" href="#practice-with-queues" title="Link to this heading">#</a></h2>
+<section id="swap-elements-in-a-linked-queue">
+<h3>Swap Elements in a Linked Queue<a class="headerlink" href="#swap-elements-in-a-linked-queue" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">select</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Choose one of the followings (I/D/X): Insert(I)/Delete(D)/Exit(X) ==&gt; &quot;</span><span class="p">)</span>
-<span class="n">queue</span> <span class="o">=</span> <span class="n">ListQueue</span><span class="p">()</span>
-<span class="k">while</span> <span class="p">(</span><span class="n">select</span> <span class="o">!=</span> <span class="s2">&quot;X&quot;</span> <span class="ow">and</span> <span class="n">select</span> <span class="o">!=</span> <span class="s2">&quot;x&quot;</span><span class="p">):</span>
-  <span class="k">if</span> <span class="n">select</span><span class="o">==</span><span class="s2">&quot;I&quot;</span> <span class="ow">or</span> <span class="n">select</span> <span class="o">==</span><span class="s2">&quot;i&quot;</span> <span class="p">:</span>
-    <span class="n">data</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Type Input Data ==&gt; &quot;</span><span class="p">)</span>
-    <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">queue</span><span class="o">.</span><span class="n">size</span><span class="p">(),</span> <span class="s2">&quot;number of elements, front : &quot;</span><span class="p">,</span> <span class="n">queue</span><span class="o">.</span><span class="n">front</span><span class="p">(),</span> <span class="s2">&quot;, rear : &quot;</span><span class="p">,</span> <span class="n">queue</span><span class="o">.</span><span class="n">queue</span><span class="p">[</span><span class="n">queue</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-  <span class="k">elif</span> <span class="n">select</span><span class="o">==</span><span class="s2">&quot;D&quot;</span> <span class="ow">or</span> <span class="n">select</span> <span class="o">==</span><span class="s2">&quot;d&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dequeue: removed an element from the front of the queue: &quot;</span><span class="p">,</span> <span class="n">queue</span><span class="o">.</span><span class="n">dequeue</span><span class="p">())</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">queue</span><span class="o">.</span><span class="n">size</span><span class="p">(),</span> <span class="s2">&quot;number of elements, front : &quot;</span><span class="p">,</span> <span class="n">queue</span><span class="o">.</span><span class="n">front</span><span class="p">(),</span> <span class="s2">&quot;, rear : &quot;</span><span class="p">,</span> <span class="n">queue</span><span class="o">.</span><span class="n">queue</span><span class="p">[</span><span class="n">queue</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-  <span class="k">else</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Wrong Insertion - should choose on of the followings (I/D/X): Insert(I)/Delete(D)/Exit(X)&quot;</span><span class="p">)</span>
-    <span class="n">select</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Choose one of the followings (I/D/X): Insert(I)/Delete(D)/Exit(X) ==&gt; &quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Terminate the program!&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">swap_queue_elements</span><span class="p">(</span><span class="n">queue</span><span class="p">,</span> <span class="n">value1</span><span class="p">,</span> <span class="n">value2</span><span class="p">):</span>
+    <span class="n">temp_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">queue</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">dequeue</span><span class="p">()</span>
+        <span class="n">temp_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+
+    <span class="n">index1</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">index2</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">temp_list</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">item</span> <span class="o">==</span> <span class="n">value1</span> <span class="ow">and</span> <span class="n">index1</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">index1</span> <span class="o">=</span> <span class="n">i</span>
+        <span class="k">elif</span> <span class="n">item</span> <span class="o">==</span> <span class="n">value2</span> <span class="ow">and</span> <span class="n">index2</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">index2</span> <span class="o">=</span> <span class="n">i</span>
+
+    <span class="k">if</span> <span class="n">index1</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">index2</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">temp_list</span><span class="p">[</span><span class="n">index1</span><span class="p">],</span> <span class="n">temp_list</span><span class="p">[</span><span class="n">index2</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp_list</span><span class="p">[</span><span class="n">index2</span><span class="p">],</span> <span class="n">temp_list</span><span class="p">[</span><span class="n">index1</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;One or both values not found in queue.&quot;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">temp_list</span><span class="p">:</span>
+        <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">queue</span> <span class="o">=</span> <span class="n">LinkedQueue</span><span class="p">()</span>
+<span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Red&quot;</span><span class="p">)</span>
+<span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Orange&quot;</span><span class="p">)</span>
+<span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Yellow&quot;</span><span class="p">)</span>
+<span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Green&quot;</span><span class="p">)</span>
+<span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Blue&quot;</span><span class="p">)</span>
+
+<span class="n">queue</span><span class="o">.</span><span class="n">printQueue</span><span class="p">()</span>
+
+<span class="n">swap_queue_elements</span><span class="p">(</span><span class="n">queue</span><span class="p">,</span> <span class="s2">&quot;Red&quot;</span><span class="p">,</span> <span class="s2">&quot;Blue&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After swapping &#39;Red&#39; and &#39;Blue&#39;:&quot;</span><span class="p">)</span>
+<span class="n">queue</span><span class="o">.</span><span class="n">printQueue</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">12</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">select</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Choose one of the followings (I/D/X): Insert(I)/Delete(D)/Exit(X) ==&gt; &quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">queue</span> <span class="o">=</span> <span class="n">ListQueue</span><span class="p">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="k">while</span> <span class="p">(</span><span class="n">select</span> <span class="o">!=</span> <span class="s2">&quot;X&quot;</span> <span class="ow">and</span> <span class="n">select</span> <span class="o">!=</span> <span class="s2">&quot;x&quot;</span><span class="p">):</span>
-
-<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\site-packages\ipykernel\kernelbase.py:1281,</span> in <span class="ni">Kernel.raw_input</span><span class="nt">(self, prompt)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1279</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_allow_stdin</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1280</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1281</span>     <span class="k">raise</span> <span class="n">StdinNotImplementedError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1282</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_input_request</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1283</span>     <span class="nb">str</span><span class="p">(</span><span class="n">prompt</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1284</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_parent_ident</span><span class="p">[</span><span class="s2">&quot;shell&quot;</span><span class="p">],</span>
-<span class="g g-Whitespace">   </span><span class="mi">1285</span>     <span class="bp">self</span><span class="o">.</span><span class="n">get_parent</span><span class="p">(</span><span class="s2">&quot;shell&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1286</span>     <span class="n">password</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1287</span> <span class="p">)</span>
-
-<span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Red Orange Yellow Green Blue 
+After swapping &#39;Red&#39; and &#39;Blue&#39;:
+Blue Orange Yellow Green Red 
 </pre></div>
 </div>
 </div>
 </div>
+</section>
 </section>
 </section>
 
@@ -1075,13 +1036,13 @@ After Reversing the queue:
             mode: "python"
         },
         kernelOptions: {
-            name: "python3",
+            name: "my-python3-kernel",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'my-python3-kernel'</script>
 
                 </article>
               
@@ -1101,15 +1062,6 @@ After Reversing the queue:
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Stacks</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="mynotebooks-8.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Jupyter Book</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -1136,6 +1088,10 @@ After Reversing the queue:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reverse-queue">Reverse: Queue</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#palindrome">Palindrome</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#queue-example">Queue Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-with-queues">Practice With Queues</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#swap-elements-in-a-linked-queue">Swap Elements in a Linked Queue</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

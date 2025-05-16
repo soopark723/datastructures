@@ -1,6 +1,6 @@
 # Data Structures Lab Sessions
 
-All labs, from weeks 1 through 7.
+All labs, from 1 through 7.
 
 ```{tableofcontents}
 ```

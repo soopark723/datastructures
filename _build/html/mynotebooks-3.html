@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -181,64 +181,48 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 1</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 1</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-1.html">Python</a></li>
 
 
 
+
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 2</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 2</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-2.html">Introduction to Python Code</a></li>
 
 
+
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 3</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 3</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Recursion</a></li>
 
-
-
-
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 4</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 4</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-4.html">Arrays</a></li>
 
-
-
-
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 5</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 5</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-5.html">Linked Lists</a></li>
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 6</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 6</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-6.html">Stacks</a></li>
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 7</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 7</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-7.html">Queues</a></li>
 
 
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 8</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="mynotebooks-8.html">Jupyter Book</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 9</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="mynotebooks-9.html">Trees</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 10</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="mynotebooks-10.html">Graphs</a></li>
 </ul>
 
     </div>
@@ -435,21 +419,33 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Recursion</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-fibonacci">Example 1: Fibonacci</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Recursion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-fibonacci">Example 1: Fibonacci</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Recursion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#time-complexity-big-o">Time Complexity: Big O</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#time-complexity-big">Time Complexity: Big Ω</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#space-complexity">Space Complexity</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-factorial">Example 2: Factorial</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Solution</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-gugu-dan">Example 3: Gugu-dan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-factorial">Example 2: Factorial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Solution</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-fibonacci-o-n">Example 4: Fibonacci O(n)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-gugu-dan">Example 3: Gugu-dan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Solution</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-fibonacci-o-n">Example 4: Fibonacci O(n)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Solution</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-with-recursive-functions">Practice With Recursive Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sum-of-first-n-numbers">Sum of First “n” Numbers</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -467,14 +463,16 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="recursion">
 <h1>Recursion<a class="headerlink" href="#recursion" title="Link to this heading">#</a></h1>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="example-1-fibonacci">
-<h1>Example 1: Fibonacci<a class="headerlink" href="#example-1-fibonacci" title="Link to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="exercises">
+<h1>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h1>
+<section id="example-1-fibonacci">
+<h2>Example 1: Fibonacci<a class="headerlink" href="#example-1-fibonacci" title="Link to this heading">#</a></h2>
 <p>In the lecture, we showed the time complexity of the below algorithm for Fibonacci series is <span class="math notranslate nohighlight">\(O(2^n)\)</span>. In similar way, find Big Omega <span class="math notranslate nohighlight">\(\Omega(\cdot)\)</span> of this algorithm.</p>
 <section id="id1">
-<h2>Recursion<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<h3>Recursion<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fib_recursive</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fib_recursive</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
   <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Incorrect input&quot;</span><span class="p">)</span>
   <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -489,43 +487,32 @@ document.write(`
 </div>
 </section>
 <section id="solution">
-<h2>Solution<a class="headerlink" href="#solution" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Time Complexity (Big O)
-The function fib_recursive(n) calls itself twice for each input n &gt; 2:
-The first call is fib_recursive(n-1)
-The second call is fib_recursive(n-2)
-This creates a binary recursion tree, where each level of the tree produces two recursive calls. Let’s break this down step-by-step.</p></li>
-</ol>
-<p>Recursion Tree Structure
-At the first level, the function is called with n.
-The second level involves two calls: fib_recursive(n-1) and fib_recursive(n-2).
-The third level has four calls: fib_recursive(n-2), fib_recursive(n-3), fib_recursive(n-3), and fib_recursive(n-4).
-This pattern continues until we reach the base cases (n == 0 or n == 1), which are the stopping conditions of the recursion.</p>
-<p>Growth of Calls
-The number of calls grows exponentially. Specifically, for each call, there are two subsequent calls that are each evaluated recursively.</p>
-<p>The recurrence relation for the time complexity is approximately:
-T(n) = T(n−1) + T(n−2) + O(1),
-where the additional O(1) accounts for the constant time for checking conditions (n == 0, n == 1, n == 2).</p>
+<h3>Solution<a class="headerlink" href="#solution" title="Link to this heading">#</a></h3>
+<section id="time-complexity-big-o">
+<h4>Time Complexity: Big O<a class="headerlink" href="#time-complexity-big-o" title="Link to this heading">#</a></h4>
+<p>The function fib_recursive(n) calls itself twice for each input n &gt; 2: The first call is fib_recursive(n-1); the second call is fib_recursive(n-2). This creates a binary recursion tree, where each level of the tree produces two recursive calls.</p>
+<p>Recursion Tree Structure: At the first level, the function is called with n. The second level involves two calls: fib_recursive(n-1) and fib_recursive(n-2). The third level has four calls: fib_recursive(n-2), fib_recursive(n-3), fib_recursive(n-3), and fib_recursive(n-4). This pattern continues until we reach the base cases (n == 0 or n == 1), which are the stopping conditions of the recursion. The number of calls grows exponentially. Specifically, for each call, there are two subsequent calls that are each evaluated recursively.</p>
+<p>The recurrence relation for the time complexity is approximately: T(n) = T(n−1) + T(n−2) + O(1), where the additional O(1) accounts for the constant time for checking conditions (n == 0, n == 1, n == 2).</p>
 <p>This recurrence has a solution that is exponential, specifically O(2^n). This means the function’s time complexity grows exponentially with respect to n.
-Final Time Complexity:
-O(2^n).</p>
+Final Time Complexity (Big O): O(2^n).</p>
+</section>
 <hr class="docutils" />
+<section id="time-complexity-big">
+<h4>Time Complexity: Big Ω<a class="headerlink" href="#time-complexity-big" title="Link to this heading">#</a></h4>
 <p>Big Omega (Ω) represents the best-case time complexity, or the lower bound.
-For this recursive Fibonacci function:
-In the best-case scenario, the input n could be small (like n == 0 or n == 1), which would directly return a result without any recursion.
-In this case, the time complexity for fib_recursive(0) or fib_recursive(1) is O(1), which means only a constant amount of work is done.
-So, the Big Omega (Ω) time complexity for the best case is:
-Ω(1).
-This is the minimum amount of work done when n is small and reaches the base case immediately.</p>
+For this recursive Fibonacci function: In the best-case scenario, the input n could be small (like n == 0 or n == 1), which would directly return a result without any recursion. In this case, the time complexity for fib_recursive(0) or fib_recursive(1) is O(1), which means only a constant amount of work is done. So, the Big Omega (Ω) time complexity for the best case is: Ω(1). This is the minimum amount of work done when n is small and reaches the base case immediately.</p>
+</section>
 <hr class="docutils" />
+<section id="space-complexity">
+<h4>Space Complexity<a class="headerlink" href="#space-complexity" title="Link to this heading">#</a></h4>
 <p>The space complexity is based on the depth of the recursion stack since each recursive call adds a new frame to the stack.
 In the worst case, the recursion depth is equal to n (for example, when the input is a large number like n = 100).
 So, the space complexity is O(n) due to the recursive calls that go as deep as n.</p>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="example-2-factorial">
-<h1>Example 2: Factorial<a class="headerlink" href="#example-2-factorial" title="Link to this heading">#</a></h1>
+</section>
+<section id="example-2-factorial">
+<h2>Example 2: Factorial<a class="headerlink" href="#example-2-factorial" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Write functions that calculates the factorial of n (i.e., n!)</p>
 <ul>
@@ -552,10 +539,10 @@ n!=
 </li>
 </ul>
 <section id="id2">
-<h2>Solution<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h3>Solution<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">factorial_for</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial_for</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
   <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
     <span class="k">return</span> <span class="s2">&quot;Undefined&quot;</span>
   <span class="n">result</span> <span class="o">=</span> <span class="mi">1</span>
@@ -563,13 +550,13 @@ n!=
     <span class="n">result</span> <span class="o">*=</span> <span class="n">x</span>
   <span class="k">return</span> <span class="n">result</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">factorial_recursive</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">factorial_recursive</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
   <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
     <span class="k">return</span> <span class="mi">1</span>
   <span class="k">else</span><span class="p">:</span>
     <span class="k">return</span> <span class="n">num</span> <span class="o">*</span> <span class="n">factorial_recursive</span><span class="p">(</span><span class="n">num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>        <span class="c1"># O(n) * O(1)</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">time</span>
 <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="n">factorial_for</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>
 <span class="n">time_for</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
@@ -592,16 +579,15 @@ Time for recursive approach: 0.0 minutes
 </div>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="example-3-gugu-dan">
-<h1>Example 3: Gugu-dan<a class="headerlink" href="#example-3-gugu-dan" title="Link to this heading">#</a></h1>
+<section id="example-3-gugu-dan">
+<h2>Example 3: Gugu-dan<a class="headerlink" href="#example-3-gugu-dan" title="Link to this heading">#</a></h2>
 <p>We can write an iterative algorithm that prints out a multiplication table (i.e., gugu-dan) as below. Write a recursive algorithm for the gugu-dan. For example, ‘Table of 3’ should print the following. What is the Big O of the gugu-dan algorithms?</p>
 <section id="id3">
-<h2>Solution<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<h3>Solution<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Iterative</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">gugu_iterative</span><span class="p">(</span><span class="n">dan</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">gugu_iterative</span><span class="p">(</span><span class="n">dan</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> x </span><span class="si">%d</span><span class="s2"> = </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">dan</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="n">dan</span> <span class="o">*</span> <span class="n">num</span><span class="p">))</span>
 <span class="n">gugu_iterative</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -609,8 +595,7 @@ Time for recursive approach: 0.0 minutes
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
 <span class="c1"># Recursive</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">gugu_recursive</span><span class="p">(</span><span class="n">dan</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">gugu_recursive</span><span class="p">(</span><span class="n">dan</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
   <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">9</span><span class="p">:</span>
     <span class="k">return</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2"> x </span><span class="si">%d</span><span class="s2"> = </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">dan</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="n">dan</span> <span class="o">*</span> <span class="n">num</span><span class="p">))</span>
@@ -658,60 +643,56 @@ Each recursive call performs O(1) work (printing the multiplication result).
 The number of recursive calls is proportional to the range from 1 to 9, which is a constant number of calls (9).
 Time Complexity: O(1) because the number of recursive calls is fixed (9).</p>
 <hr class="docutils" />
-<p>Summary:
-Iterative version: The time complexity is O(1) because the loop runs a fixed number of times (9 iterations).
-Recursive version: The time complexity is also O(1) because the recursion depth is constant (9 recursive calls).
-Both functions have constant time complexity O(1) because they operate over a fixed number of iterations or recursive calls (9).</p>
+<p>Summary</p>
+<ul class="simple">
+<li><p>Iterative version: The time complexity is O(1) because the loop runs a fixed number of times (9 iterations).</p></li>
+<li><p>Recursive version: The time complexity is also O(1) because the recursion depth is constant (9 recursive calls).</p></li>
+</ul>
+<p>Both functions have constant time complexity O(1) because they operate over a fixed number of iterations or recursive calls (9).</p>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="example-4-fibonacci-o-n">
-<h1>Example 4: Fibonacci O(n)<a class="headerlink" href="#example-4-fibonacci-o-n" title="Link to this heading">#</a></h1>
+<section id="example-4-fibonacci-o-n">
+<h2>Example 4: Fibonacci O(n)<a class="headerlink" href="#example-4-fibonacci-o-n" title="Link to this heading">#</a></h2>
 <p>Can you write an algorithm for the Fibonacci series with a time complexity of <span class="math notranslate nohighlight">\(O(n)\)</span> instead of <span class="math notranslate nohighlight">\(O(2^n)\)</span>? For example, Fibonacci sequence up to the 10th term (index 0 to 10) is <span class="math notranslate nohighlight">\([0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]\)</span>.</p>
 <p>Hint: <a class="reference external" href="https://chanos.tistory.com/entry/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98-%EC%88%98%EC%97%B4%EC%9D%98-%EC%8B%9C%EA%B0%84-%EB%B3%B5%EC%9E%A1%EB%8F%84-%EC%99%84%EB%B2%BD%ED%9E%88-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0">Helpful resource</a></p>
 <section id="id4">
-<h2>Solution<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<h3>Solution<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">def fib_recursive2(n, initial_values=[0, 1]):</span>
-<span class="sd">  for x in range(n-2):</span>
-<span class="sd">    initial_values.append(initial_values[-1] + initial_values[-2])</span>
-<span class="sd">  return sum(initial_values)</span>
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">fib_recursive2</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">initial_values</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]):</span>
-  <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="k">return</span> <span class="mi">0</span>
-  <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-    <span class="k">return</span> <span class="mi">0</span>
-  <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-    <span class="k">return</span> <span class="mi">1</span>
-  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">):</span>
-    <span class="n">next_value</span> <span class="o">=</span> <span class="n">initial_values</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">initial_values</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
-    <span class="n">initial_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">next_value</span><span class="p">)</span>
-  <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">initial_values</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fib_iterative</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Incorrect input&quot;</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="n">prev_prev</span><span class="p">,</span> <span class="n">prev</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> 
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">current</span> <span class="o">=</span> <span class="n">prev</span> <span class="o">+</span> <span class="n">prev_prev</span>
+        <span class="n">prev_prev</span><span class="p">,</span> <span class="n">prev</span> <span class="o">=</span> <span class="n">prev</span><span class="p">,</span> <span class="n">current</span>
+    
+    <span class="k">return</span> <span class="n">prev</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fib_recursive: &quot;</span><span class="p">,</span> <span class="n">fib_recursive</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fib_recursive2: &quot;</span><span class="p">,</span> <span class="n">fib_recursive2</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fib_iterative: &quot;</span><span class="p">,</span> <span class="n">fib_iterative</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fib_recursive:  55
-fib_recursive2:  88
+fib_iterative:  55
 </pre></div>
 </div>
 </div>
 </div>
-<p>Iterative Solution (O(n) Time Complexity)
-Here’s the iterative approach to calculate the Fibonacci series in O(n) time:
-We initialize two variables, a and b, to represent fib(0) and fib(1) (i.e., 0 and 1).
+<p>Initialize two variables, a and b, to represent fib(0) and fib(1) (ex.: 0 and 1).
 We use a loop that starts from 2 and goes up to n, updating a and b in each iteration to compute the next Fibonacci number.
 At the end of the loop, b will contain the nth Fibonacci number.</p>
 <p>Time Complexity: O(n) because we only iterate through the loop n-1 times, and each iteration takes constant time.
 Space Complexity: O(1) because we only use a constant amount of extra space for the two variables a and b.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fib_iterative</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fib_iterative2</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">n</span>
 
@@ -727,6 +708,46 @@ Space Complexity: O(1) because we only use a constant amount of extra space for 
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fib_iterative2</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>55
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="practice-with-recursive-functions">
+<h2>Practice With Recursive Functions<a class="headerlink" href="#practice-with-recursive-functions" title="Link to this heading">#</a></h2>
+<section id="sum-of-first-n-numbers">
+<h3>Sum of First “n” Numbers<a class="headerlink" href="#sum-of-first-n-numbers" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_n</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">+</span> <span class="n">sum_n</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">sum_n</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sum_n</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sum_n</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6
+15
+36
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 
@@ -742,13 +763,13 @@ Space Complexity: O(1) because we only use a constant amount of extra space for 
             mode: "python"
         },
         kernelOptions: {
-            name: "python3",
+            name: "my-python3-kernel",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'my-python3-kernel'</script>
 
                 </article>
               
@@ -795,21 +816,33 @@ Space Complexity: O(1) because we only use a constant amount of extra space for 
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Recursion</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-fibonacci">Example 1: Fibonacci</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Recursion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-fibonacci">Example 1: Fibonacci</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Recursion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#time-complexity-big-o">Time Complexity: Big O</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#time-complexity-big">Time Complexity: Big Ω</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#space-complexity">Space Complexity</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-factorial">Example 2: Factorial</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Solution</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-gugu-dan">Example 3: Gugu-dan</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-factorial">Example 2: Factorial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Solution</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-fibonacci-o-n">Example 4: Fibonacci O(n)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-gugu-dan">Example 3: Gugu-dan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Solution</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-fibonacci-o-n">Example 4: Fibonacci O(n)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Solution</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-with-recursive-functions">Practice With Recursive Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sum-of-first-n-numbers">Sum of First “n” Numbers</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -179,64 +179,46 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 1</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 1</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-1.html">Python</a></li>
 
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 2</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 2</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-2.html">Introduction to Python Code</a></li>
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 3</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 3</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-3.html">Recursion</a></li>
 
-
-
-
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 4</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 4</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-4.html">Arrays</a></li>
 
-
-
-
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 5</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 5</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-5.html">Linked Lists</a></li>
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 6</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 6</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Stacks</a></li>
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 7</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 7</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-7.html">Queues</a></li>
 
 
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 8</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="mynotebooks-8.html">Jupyter Book</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 9</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="mynotebooks-9.html">Trees</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 10</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="mynotebooks-10.html">Graphs</a></li>
 </ul>
 
     </div>
@@ -440,6 +422,10 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reverse-stack">Reverse: Stack</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#websites-example">Websites Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-with-stacks">Practice With Stacks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#find-an-element-based-on-index">Find an Element Based on Index</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -461,8 +447,8 @@ document.write(`
 <h1>Class Definitions<a class="headerlink" href="#class-definitions" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ListNode</span><span class="p">:</span>
-	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">nextNode</span><span class="p">:</span><span class="s2">&quot;ListNode&quot;</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ListNode</span><span class="p">:</span>
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">nextNode</span><span class="p">:</span><span class="s2">&quot;ListNode&quot;</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">nextNode</span>
 </pre></div>
@@ -471,18 +457,18 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">SimpleLinkedList</span><span class="p">:</span>
-	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SimpleLinkedList</span><span class="p">:</span>
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s2">&quot;dummy&quot;</span><span class="p">,</span> <span class="n">nextNode</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">=</span> <span class="mi">0</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
 		<span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">numItems</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 		<span class="n">newNode</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">prev</span><span class="o">.</span><span class="n">next</span><span class="p">)</span>
 		<span class="n">prev</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="n">newNode</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">+=</span> <span class="mi">1</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
   		<span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">numItems</span><span class="p">:</span>
     			<span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
     			<span class="n">newNode</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">prev</span><span class="o">.</span><span class="n">next</span><span class="p">)</span>
@@ -491,7 +477,7 @@ document.write(`
   		<span class="k">else</span><span class="p">:</span>
     			<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;: out of bound in insert()&quot;</span><span class="p">)</span> 
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
 		<span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">numItems</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
 			<span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 			<span class="n">curr</span> <span class="o">=</span> <span class="n">prev</span><span class="o">.</span><span class="n">next</span>
@@ -502,7 +488,7 @@ document.write(`
 		<span class="k">else</span><span class="p">:</span>
 			<span class="k">return</span> <span class="kc">None</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
   		<span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
   		<span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
     			<span class="n">prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getNode</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
@@ -512,13 +498,13 @@ document.write(`
   		<span class="k">else</span><span class="p">:</span>
     			<span class="k">return</span> <span class="kc">None</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">getNode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListNode</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">getNode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ListNode</span><span class="p">:</span>
 		<span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span>
 		<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
 			<span class="n">curr</span> <span class="o">=</span> <span class="n">curr</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">return</span> <span class="n">curr</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
 		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
 			<span class="k">return</span> <span class="kc">None</span>
 		<span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
@@ -526,24 +512,24 @@ document.write(`
 		<span class="k">else</span><span class="p">:</span>
 			<span class="k">return</span> <span class="kc">None</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">printList</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">printList</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">while</span> <span class="n">curr</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
 			<span class="nb">print</span><span class="p">(</span><span class="n">curr</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
 			<span class="n">curr</span> <span class="o">=</span> <span class="n">curr</span><span class="o">.</span><span class="n">next</span>
 		<span class="nb">print</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">extend</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span><span class="s1">&#39;SimpleLinkedList&#39;</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">extend</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span><span class="s1">&#39;SimpleLinkedList&#39;</span><span class="p">):</span>
 		<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">size</span><span class="p">()):</span>
 			<span class="bp">self</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
  
-	<span class="k">def</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="n">a</span> <span class="o">=</span> <span class="n">SimpleLinkedList</span><span class="p">()</span>
 		<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">numItems</span><span class="p">):</span>
 			<span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
 		<span class="k">return</span> <span class="n">a</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">reverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="n">a</span> <span class="o">=</span> <span class="n">SimpleLinkedList</span><span class="p">()</span>
 		<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">numItems</span><span class="p">):</span>
 			<span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
@@ -551,7 +537,7 @@ document.write(`
 		<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">size</span><span class="p">()):</span>
 			<span class="bp">self</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
 		<span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">numItems</span><span class="p">):</span>
 			<span class="k">if</span> <span class="n">curr</span><span class="o">.</span><span class="n">data</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span>
@@ -560,17 +546,17 @@ document.write(`
 				<span class="n">curr</span> <span class="o">=</span> <span class="n">curr</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">return</span> <span class="kc">None</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">==</span> <span class="mi">0</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">numItems</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="n">ListNode</span><span class="p">(</span><span class="s2">&quot;dummy&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">numItems</span> <span class="o">=</span> <span class="mi">0</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 		<span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
 		<span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">head</span><span class="o">.</span><span class="n">next</span> 
 		<span class="k">while</span> <span class="n">curr</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
@@ -578,48 +564,35 @@ document.write(`
 					<span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
 			<span class="n">curr</span> <span class="o">=</span> <span class="n">curr</span><span class="o">.</span><span class="n">next</span>
 		<span class="k">return</span> <span class="n">cnt</span>
-	
-
-<span class="c1"># a = SimpleLinkedList()</span>
-<span class="c1"># a.append(1); a.append(3); a.append(5); a.append(7); a.append(11)</span>
-<span class="c1"># a.printList()</span>
-<span class="c1"># a.insert(4,9)</span>
-<span class="c1"># a.size()</span>
-<span class="c1"># a.isEmpty()</span>
-<span class="c1"># a.index(3)</span>
-<span class="c1"># a.pop(1)</span>
-<span class="c1"># a.printList()</span>
-<span class="c1"># a.remove(9)</span>
-<span class="c1"># a.printList()</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ListStack</span><span class="p">:</span>
-	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ListStack</span><span class="p">:</span>
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">push</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">push</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">top</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">top</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
 			<span class="k">return</span> <span class="kc">None</span>
 		<span class="k">else</span><span class="p">:</span>
 			<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 		<span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
   		<span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">printStack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">printStack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Elements from top to bottom: &quot;</span><span class="p">)</span>
 		<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
 			<span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
@@ -630,67 +603,32 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">LinkedStack</span><span class="p">:</span>
-	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LinkedStack</span><span class="p">:</span>
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">stack</span> <span class="o">=</span> <span class="n">SimpleLinkedList</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">push</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">push</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">top</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">top</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
 			<span class="k">return</span> <span class="kc">None</span>
 		<span class="k">else</span><span class="p">:</span>
 			<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+	<span class="k">def</span> <span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
 
-	<span class="k">def</span><span class="w"> </span><span class="nf">printStack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">printStack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Elements from top to bottom: &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
 		<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">size</span><span class="p">()):</span>
 			<span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">ListQueue</span><span class="p">:</span>
-	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span> <span class="o">=</span> <span class="p">[]</span>
-
-	<span class="k">def</span><span class="w"> </span><span class="nf">enqueue</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span> <span class="c1"># insert an element to the end of the queue</span>
-		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-	<span class="k">def</span><span class="w"> </span><span class="nf">dequeue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># remove an element from the front of the queue</span>
-		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> 
-
-	<span class="k">def</span><span class="w"> </span><span class="nf">front</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># returns the front node of the queue without deleting it</span>
-		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
-			<span class="k">return</span> <span class="kc">None</span>
-		<span class="k">else</span><span class="p">:</span>
-			<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-
-	<span class="k">def</span><span class="w"> </span><span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span> <span class="c1"># returns true if queue is empty, else false.</span>
-		<span class="k">return</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">);</span>
- 
-	<span class="k">def</span><span class="w"> </span><span class="nf">dequeueAll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># clean the queue</span>
-		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
-
-	<span class="k">def</span><span class="w"> </span><span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># length of the queue</span>
-		<span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">)</span>
-
-	<span class="k">def</span><span class="w"> </span><span class="nf">printQueue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># print elements from front to end</span>
-		<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Elements from front to end: &quot;</span><span class="p">)</span>
-		<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">)):</span>
-			<span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -707,16 +645,6 @@ document.write(`
 <span class="n">stack</span><span class="o">.</span><span class="n">printStack</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Is the stack empty?&#39;</span><span class="p">,</span> <span class="n">stack</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of element in the stack?&#39;</span><span class="p">,</span> <span class="n">stack</span><span class="o">.</span><span class="n">size</span><span class="p">())</span>
-
-
-<span class="n">stack</span> <span class="o">=</span> <span class="n">LinkedStack</span><span class="p">()</span>
-<span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span> <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span> <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span> <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span>
-<span class="n">stack</span><span class="o">.</span><span class="n">printStack</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Top after pushes: &quot;</span><span class="p">,</span> <span class="n">stack</span><span class="o">.</span><span class="n">top</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Remove an element from top: &quot;</span><span class="p">,</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
-<span class="n">stack</span><span class="o">.</span><span class="n">printStack</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Is the stack empty?&#39;</span><span class="p">,</span> <span class="n">stack</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of element in the stack?&#39;</span><span class="p">,</span> <span class="n">stack</span><span class="o">.</span><span class="n">size</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
@@ -729,7 +657,25 @@ Elements from top to bottom:
 300 200 100 
 Is the stack empty? False
 Number of element in the stack? 3
-Elements from top to bottom:  400 300 200 100 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stack</span> <span class="o">=</span> <span class="n">LinkedStack</span><span class="p">()</span>
+<span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span> <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span> <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span> <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span>
+<span class="n">stack</span><span class="o">.</span><span class="n">printStack</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Top after pushes: &quot;</span><span class="p">,</span> <span class="n">stack</span><span class="o">.</span><span class="n">top</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Remove an element from top: &quot;</span><span class="p">,</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
+<span class="n">stack</span><span class="o">.</span><span class="n">printStack</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Is the stack empty?&#39;</span><span class="p">,</span> <span class="n">stack</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of element in the stack?&#39;</span><span class="p">,</span> <span class="n">stack</span><span class="o">.</span><span class="n">size</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Elements from top to bottom:  400 300 200 100 
 Top after pushes:  400
 Remove an element from top:  400
 Elements from top to bottom:  300 200 100 
@@ -768,9 +714,9 @@ This function should modify the original stack.</p></li>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># a function that reverses the characters in a string using a stack, without modifying the original stack.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A function that reverses the characters in a string using a stack, without modifying the original stack.</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">reverse</span><span class="p">(</span><span class="n">original_stack</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="n">original_stack</span><span class="p">):</span>
     <span class="n">reversed_stack</span> <span class="o">=</span> <span class="n">ListStack</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">original_stack</span><span class="o">.</span><span class="n">size</span><span class="p">()):</span>
         <span class="n">reversed_stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">original_stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
@@ -790,76 +736,39 @@ This function should modify the original stack.</p></li>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A function that reverses a given stack using another stack. This function should modify the original stack.</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">insertAtBottom</span><span class="p">(</span><span class="n">stack</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">stack</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
-        <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">temp</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-        <span class="n">insertAtBottom</span><span class="p">(</span><span class="n">stack</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
-        <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">reverseInPlace</span><span class="p">(</span><span class="n">stack</span><span class="p">):</span>
-    <span class="n">temp_stack</span> <span class="o">=</span> <span class="n">ListStack</span><span class="p">()</span>
-
-    <span class="c1"># Move all elements from stack to temp_stack</span>
-    <span class="k">while</span> <span class="ow">not</span> <span class="n">stack</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
-        <span class="n">temp_stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
-
-    <span class="c1"># Move them back to the original stack</span>
-    <span class="k">while</span> <span class="ow">not</span> <span class="n">temp_stack</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
-        <span class="n">item</span> <span class="o">=</span> <span class="n">temp_stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-        <span class="n">insertAtBottom</span><span class="p">(</span><span class="n">stack</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">stack</span>
-
-<span class="n">stack</span> <span class="o">=</span> <span class="n">ListStack</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stack</span> <span class="o">=</span> <span class="n">ListStack</span><span class="p">()</span>
 <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span> <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span> <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span> <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span>
 <span class="n">stack</span><span class="o">.</span><span class="n">printStack</span><span class="p">()</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Reversed (in-place) stack:&quot;</span><span class="p">)</span>
-<span class="n">reverseInPlace</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span>
-<span class="n">stack</span><span class="o">.</span><span class="n">printStack</span><span class="p">()</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">new_stack</span> <span class="o">=</span> <span class="n">ListStack</span><span class="p">()</span>
-        <span class="n">new_stack</span><span class="o">.</span><span class="n">stack</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stack</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-        <span class="k">return</span> <span class="n">new_stack</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="nf">reverse</span><span class="p">(</span><span class="n">original_stack</span><span class="p">):</span>
-        <span class="c1"># Clone the stack to preserve the original</span>
-        <span class="n">cloned_stack</span> <span class="o">=</span> <span class="n">original_stack</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
-        <span class="n">reversed_stack</span> <span class="o">=</span> <span class="n">ListStack</span><span class="p">()</span>
-
-        <span class="c1"># Reverse the cloned stack</span>
-        <span class="k">while</span> <span class="ow">not</span> <span class="n">cloned_stack</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
-            <span class="n">reversed_stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">cloned_stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
-
-        <span class="k">return</span> <span class="n">reversed_stack</span>
-<span class="o">---</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="nf">insertAtBottom</span><span class="p">(</span><span class="n">stack</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">stack</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
-            <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">temp</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-            <span class="n">insertAtBottom</span><span class="p">(</span><span class="n">stack</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
-            <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="nf">reverseInPlace</span><span class="p">(</span><span class="n">stack</span><span class="p">):</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">stack</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
-            <span class="n">temp</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-            <span class="n">reverseInPlace</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span>
-            <span class="n">insertAtBottom</span><span class="p">(</span><span class="n">stack</span><span class="p">,</span> <span class="n">temp</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">33</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">clone</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="o">^</span>
-<span class="ne">IndentationError</span>: unexpected indent
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Elements from top to bottom: 
+400 300 200 100 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># A function that reverses a given stack using another stack. This function should modify the original stack.</span>
+
+<span class="k">def</span> <span class="nf">reverse_stack</span><span class="p">(</span><span class="n">stack</span><span class="p">:</span> <span class="n">ListStack</span><span class="p">):</span>
+    <span class="n">temp_stack</span> <span class="o">=</span> <span class="n">ListStack</span><span class="p">()</span>
+
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">stack</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
+        <span class="n">temp_stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
+
+    <span class="n">stack</span><span class="o">.</span><span class="n">stack</span> <span class="o">=</span> <span class="n">temp_stack</span><span class="o">.</span><span class="n">stack</span>
+
+<span class="n">reverse_stack</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span>
+<span class="n">stack</span><span class="o">.</span><span class="n">printStack</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Elements from top to bottom: 
+100 200 300 400 
 </pre></div>
 </div>
 </div>
@@ -867,27 +776,46 @@ This function should modify the original stack.</p></li>
 </section>
 <section id="websites-example">
 <h2>Websites Example<a class="headerlink" href="#websites-example" title="Link to this heading">#</a></h2>
+</section>
+<section id="practice-with-stacks">
+<h2>Practice With Stacks<a class="headerlink" href="#practice-with-stacks" title="Link to this heading">#</a></h2>
+<section id="find-an-element-based-on-index">
+<h3>Find an Element Based on Index<a class="headerlink" href="#find-an-element-based-on-index" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">webbrowser</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
-<span class="n">stack</span> <span class="o">=</span> <span class="n">ListStack</span><span class="p">()</span>
-<span class="n">urls</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;naver.com&quot;</span><span class="p">,</span> <span class="s2">&quot;daum.net&quot;</span><span class="p">,</span> <span class="s2">&quot;nate.com&quot;</span><span class="p">]</span>
-<span class="c1"># Browser history stacks up in the order in which you visit websites</span>
-<span class="c1"># push url of each visited websites to a stack</span>
-<span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span>
-  <span class="c1">#stack.push(url)</span>
-  <span class="c1"># When you hit the back button, the previous URL is popped from the stack.</span>
-  <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-
-<span class="k">while</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="c1"># if stack is not empty</span>
-  <span class="n">url</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="c1"># pop the previous URL and open the browser</span>
-  <span class="n">webbrowser</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;http://&#39;</span><span class="o">+</span><span class="n">url</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_element_at_index</span><span class="p">(</span><span class="n">stack</span><span class="p">:</span> <span class="n">ListStack</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">index</span> <span class="o">&gt;=</span> <span class="n">stack</span><span class="o">.</span><span class="n">size</span><span class="p">():</span>
+        <span class="k">return</span> <span class="kc">None</span>
+    <span class="k">return</span> <span class="n">stack</span><span class="o">.</span><span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="p">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>
 </pre></div>
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">ListStack</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]:</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+
+<span class="n">s</span><span class="o">.</span><span class="n">printStack</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Element at index 0:&quot;</span><span class="p">,</span> <span class="n">get_element_at_index</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Element at index 2:&quot;</span><span class="p">,</span> <span class="n">get_element_at_index</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Element at index 5:&quot;</span><span class="p">,</span> <span class="n">get_element_at_index</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Elements from top to bottom: 
+40 30 20 10 
+Element at index 0: 40
+Element at index 2: 20
+Element at index 5: None
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 
@@ -903,13 +831,13 @@ This function should modify the original stack.</p></li>
             mode: "python"
         },
         kernelOptions: {
-            name: "python3",
+            name: "my-python3-kernel",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'my-python3-kernel'</script>
 
                 </article>
               
@@ -963,6 +891,10 @@ This function should modify the original stack.</p></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reverse-stack">Reverse: Stack</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#websites-example">Websites Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-with-stacks">Practice With Stacks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#find-an-element-based-on-index">Find an Element Based on Index</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
