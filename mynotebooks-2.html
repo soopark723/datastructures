@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -179,65 +179,46 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 1</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 1</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-1.html">Python</a></li>
 
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 2</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 2</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction to Python Code</a></li>
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 3</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 3</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-3.html">Recursion</a></li>
 
-
-
-
-
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 4</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 4</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-4.html">Arrays</a></li>
 
-
-
-
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 5</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 5</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-5.html">Linked Lists</a></li>
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 6</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 6</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-6.html">Stacks</a></li>
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 7</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lab 7</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="mynotebooks-7.html">Queues</a></li>
 
 
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 8</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="mynotebooks-8.html">Jupyter Book</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 9</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="mynotebooks-9.html">Trees</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 10</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="mynotebooks-10.html">Graphs</a></li>
 </ul>
 
     </div>
@@ -441,6 +422,10 @@ document.write(`
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionary">Dictionary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-with-dictionaries">Practice With Dictionaries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-a-dictionary-to-describe-your-outfit">Use a Dictionary to Describe Your Outfit</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -486,11 +471,67 @@ document.write(`
 <h2>Module<a class="headerlink" href="#module" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the Array class from the Array.py file</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">Array</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">Array</span><span class="w"> </span><span class="kn">import</span> <span class="n">MyArray</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="c1"># Create an instance of the Array class</span>
+<span class="k">class</span> <span class="nc">MyArray</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_list</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">input_list</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;i&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">myInsert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+        <span class="n">new_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;i&quot;</span><span class="p">)</span>
+        <span class="n">new_array</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">)]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">array</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">new_array</span><span class="p">)</span>
+        
+        <span class="c1"># Shift elements to the right</span>
+        <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">,</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+            <span class="n">new_array</span><span class="p">[</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_array</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+        
+        <span class="n">new_array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">array</span> <span class="o">=</span> <span class="n">new_array</span>  <span class="c1"># Update self.array</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">array</span>
+
+    <span class="k">def</span> <span class="nf">myIndex</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">idx</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>  <span class="c1"># If the key is not found</span>
+
+    <span class="k">def</span> <span class="nf">myDelete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">)</span>
+        
+        <span class="c1"># Shift elements to the left</span>
+        <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">idx</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">array</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">[:</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>  <span class="c1"># Update self.array</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">array</span>
+
+    <span class="k">def</span> <span class="nf">myRemove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">myIndex</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># O(n)</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Element not found.&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">array</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Element found at position:&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">myDelete</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>  <span class="c1"># O(n)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">array</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the Array class from the Array.py file</span>
+<span class="c1"># from Array import *</span>
+<span class="c1"># from Array import MyArray</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create an instance of the Array class</span>
 <span class="n">arr</span> <span class="o">=</span> <span class="n">MyArray</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
 
 <span class="c1"># Print the original array</span>
@@ -510,15 +551,13 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Import the Array class from the Array.py file</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Array</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Array</span><span class="w"> </span><span class="kn">import</span> <span class="n">MyArray</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># Create an instance of the Array class</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;Array&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Original array: [1 2 3 4 5]
+After insertion: [1 2 3 4 5 6]
+Element found at position: 4
+After removal: [1 2 3 4 6]
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
 </pre></div>
 </div>
 </div>
@@ -528,14 +567,19 @@ document.write(`
 <h2>Package<a class="headerlink" href="#package" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">1.</span> <span class="n">Create</span> <span class="err">`</span><span class="n">DataStructureCode</span><span class="o">/</span><span class="err">`</span> <span class="n">folder</span><span class="o">.</span>
-<span class="mf">2.</span> <span class="n">Then</span><span class="p">,</span> <span class="n">create</span> <span class="n">an</span> <span class="n">empty</span> <span class="err">`</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="err">`</span> <span class="n">file</span> <span class="n">inside</span> <span class="n">the</span> <span class="err">`</span><span class="n">DataStructureCode</span><span class="o">/</span><span class="err">`</span> <span class="n">folder</span><span class="o">.</span> <span class="n">This</span> <span class="n">file</span> <span class="ow">is</span> <span class="n">required</span> <span class="k">for</span> <span class="n">the</span> <span class="n">folder</span> <span class="n">to</span> <span class="n">be</span> <span class="n">recognized</span> <span class="k">as</span> <span class="n">a</span> <span class="n">package</span><span class="o">.</span>
-<span class="mf">3.</span> <span class="n">Copy</span> <span class="ow">and</span> <span class="n">paste</span> <span class="err">`</span><span class="n">Array</span><span class="o">.</span><span class="n">py</span><span class="err">`</span> <span class="n">file</span> <span class="n">inside</span> <span class="n">of</span> <span class="err">`</span><span class="n">DataStructureCode</span><span class="o">/</span><span class="err">`</span> <span class="n">folder</span><span class="o">.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. Create `DataStructureCode/` folder.</span>
+<span class="c1"># 2. Then, create an empty `__init__.py` file inside the `DataStructureCode/` folder. This file is required for the folder to be recognized as a package.</span>
+<span class="c1"># 3. Copy and paste `Array.py` file inside of `DataStructureCode/` folder.</span>
 
-<span class="kn">from</span><span class="w"> </span><span class="nn">DataStructureCode.Array</span><span class="w"> </span><span class="kn">import</span> <span class="n">MyArray</span>
+<span class="c1"># from DataStructureCode.Array import MyArray</span>
 
 <span class="n">arr</span> <span class="o">=</span> <span class="n">MyArray</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Original array:&quot;</span><span class="p">,</span> <span class="n">arr</span><span class="o">.</span><span class="n">array</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Original array: [1 2 3 4 5]
 </pre></div>
 </div>
 </div>
@@ -561,11 +605,22 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2025-03-10
+1
+[{&#39;date&#39;: &#39;2025-03-10&#39;, &#39;status&#39;: 1}]
+[{&#39;date&#39;: &#39;2025-03-10&#39;, &#39;status&#39;: 1}, {&#39;date&#39;: &#39;2025-03-15&#39;, &#39;status&#39;: 0}]
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;date&#39;: &#39;2025-03-15&#39;, &#39;status&#39;: 0}
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Attendance</span><span class="p">:</span>
-  <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">department</span><span class="p">,</span> <span class="n">attendance</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Attendance</span><span class="p">:</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">department</span><span class="p">,</span> <span class="n">attendance</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="nb">id</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">department</span> <span class="o">=</span> <span class="n">department</span>
@@ -573,52 +628,171 @@ document.write(`
 <span class="n">person1</span> <span class="o">=</span> <span class="n">Attendance</span><span class="p">(</span><span class="mi">123456</span><span class="p">,</span><span class="s2">&quot;Ewha Kim&quot;</span><span class="p">,</span><span class="s2">&quot;AI&quot;</span><span class="p">,</span><span class="n">my_attendance</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">person1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ID=&quot;</span><span class="p">,</span> <span class="n">person1</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="s2">&quot;, Name = &quot;</span><span class="p">,</span><span class="n">person1</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;, Department = &quot;</span><span class="p">,</span> <span class="n">person1</span><span class="o">.</span><span class="n">department</span><span class="p">,</span><span class="s2">&quot;, Attendance = &quot;</span><span class="p">,</span><span class="n">person1</span><span class="o">.</span><span class="n">attendance</span><span class="p">)</span>
-
-<span class="mf">1.</span> <span class="n">Add</span> <span class="n">a</span> <span class="n">method</span> <span class="err">`</span><span class="n">mark_attendance</span><span class="p">(</span><span class="n">date</span><span class="p">,</span> <span class="n">status</span><span class="p">)</span><span class="err">`</span> <span class="n">that</span> <span class="n">allows</span> <span class="n">the</span> <span class="n">recording</span> <span class="n">of</span> <span class="n">attendance</span> <span class="k">for</span> <span class="n">a</span> <span class="n">particular</span> <span class="n">date</span><span class="o">.</span> <span class="n">The</span> <span class="n">status</span> <span class="n">should</span> <span class="n">be</span> <span class="n">either</span><span class="p">:</span> <span class="err">`</span><span class="mi">1</span><span class="err">`</span> <span class="k">for</span> <span class="n">present</span> <span class="ow">and</span> <span class="err">`</span><span class="mi">0</span><span class="err">`</span> <span class="k">for</span> <span class="n">absent</span><span class="o">.</span>
-
-<span class="mf">2.</span> <span class="n">Add</span> <span class="n">a</span> <span class="n">method</span> <span class="err">`</span><span class="n">view_attendance</span><span class="p">()</span><span class="err">`</span> <span class="n">that</span> <span class="n">prints</span> <span class="n">out</span> <span class="n">the</span> <span class="n">attendance</span> <span class="n">record</span> <span class="k">for</span> <span class="n">the</span> <span class="n">student</span><span class="o">.</span> <span class="n">The</span> <span class="n">output</span> <span class="n">should</span> <span class="n">display</span> <span class="n">each</span> <span class="n">entry</span> <span class="k">with</span> <span class="n">the</span> <span class="n">date</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">attendance</span> <span class="n">status</span> <span class="p">(</span><span class="n">Present</span><span class="o">/</span><span class="n">Absent</span><span class="p">)</span><span class="o">.</span>
-
-<span class="mf">3.</span> <span class="n">Add</span> <span class="n">a</span> <span class="n">method</span> <span class="err">`</span><span class="n">update_attendance</span><span class="p">(</span><span class="n">date</span><span class="p">,</span> <span class="n">status</span><span class="p">)</span><span class="err">`</span> <span class="n">that</span> <span class="n">updates</span> <span class="n">the</span> <span class="n">attendance</span> <span class="n">record</span> <span class="k">for</span> <span class="n">a</span> <span class="n">specific</span> <span class="n">date</span><span class="o">.</span> <span class="n">If</span> <span class="n">the</span> <span class="n">given</span> <span class="n">date</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">found</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">records</span><span class="p">,</span> <span class="k">return</span> <span class="n">a</span> <span class="n">message</span> <span class="n">indicating</span> <span class="n">that</span> <span class="n">the</span> <span class="n">date</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">found</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;__main__.Attendance object at 0x000001BB65054830&gt;
+ID= 123456 , Name =  Ewha Kim , Department =  AI , Attendance =  [{&#39;date&#39;: &#39;2025-03-10&#39;, &#39;status&#39;: 1}, {&#39;date&#39;: &#39;2025-03-15&#39;, &#39;status&#39;: 0}]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Attendance</span><span class="p">:</span>
-  <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">department</span><span class="p">,</span><span class="n">attendance</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. Add a method `mark_attendance(date, status)` that allows the recording of attendance for a particular date. The status should be either: `1` for present and `0` for absent.</span>
+<span class="c1"># 2. Add a method `view_attendance()` that prints out the attendance record for the student. The output should display each entry with the date and the attendance status (Present/Absent).</span>
+<span class="c1"># 3. Add a method `update_attendance(date, status)` that updates the attendance record for a specific date. If the given date is not found in the records, return a message indicating that the date is not found.</span>
+
+<span class="k">class</span> <span class="nc">Attendance</span><span class="p">:</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">department</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="nb">id</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">department</span> <span class="o">=</span> <span class="n">department</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">attendance</span> <span class="o">=</span> <span class="n">attendance</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">attendance</span> <span class="o">=</span> <span class="p">{}</span>
 
-  <span class="k">def</span><span class="w"> </span><span class="nf">mark_attendance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">status</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">attendance</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">&quot;date&quot;</span><span class="p">:</span> <span class="n">date</span><span class="p">,</span> <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="n">status</span><span class="p">})</span>
+  <span class="k">def</span> <span class="nf">mark_attendance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">status</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">status</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Status must be 0 (Absent) or 1 (Present).&quot;</span><span class="p">)</span>
+        <span class="k">return</span> 
+    <span class="bp">self</span><span class="o">.</span><span class="n">attendance</span><span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=</span> <span class="n">status</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Attendance marked for </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> on </span><span class="si">{</span><span class="n">date</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
 
-  <span class="k">def</span><span class="w"> </span><span class="nf">view_attendance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Attendance record for &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;:&quot;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">attendance</span><span class="p">:</span>
-      <span class="k">if</span> <span class="n">record</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="n">status</span> <span class="o">=</span> <span class="s2">&quot;Present&quot;</span>
-      <span class="k">else</span><span class="p">:</span>
-        <span class="n">status</span> <span class="o">=</span> <span class="s2">&quot;Absent&quot;</span>
-      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Date: &quot;</span><span class="p">,</span> <span class="n">record</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">],</span> <span class="s2">&quot;, Status: &quot;</span><span class="p">,</span> <span class="n">status</span><span class="p">)</span>
+  <span class="k">def</span> <span class="nf">view_attendance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Attendance record for </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">date</span><span class="p">,</span> <span class="n">status</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">attendance</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+      <span class="n">status_str</span> <span class="o">=</span> <span class="s2">&quot;Present&quot;</span> <span class="k">if</span> <span class="n">status</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="s2">&quot;Absent&quot;</span>
+      <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Date: </span><span class="si">{</span><span class="n">date</span><span class="si">}</span><span class="s2">, Status: </span><span class="si">{</span><span class="n">status_str</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-  <span class="k">def</span><span class="w"> </span><span class="nf">update_attendance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">status</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">attendance</span><span class="p">:</span>
-      <span class="k">if</span> <span class="n">record</span><span class="p">[</span><span class="s2">&quot;date&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">date</span><span class="p">:</span>
-        <span class="n">record</span><span class="p">[</span><span class="s2">&quot;status&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">status</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Attendance updated for &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot; on &quot;</span><span class="p">,</span> <span class="n">date</span><span class="p">)</span>
-        <span class="k">return</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Date not found.&quot;</span><span class="p">)</span>
-
-<span class="n">person1</span> <span class="o">=</span> <span class="n">Attendance</span><span class="p">(</span><span class="mi">123456</span><span class="p">,</span><span class="s2">&quot;Ewha Kim&quot;</span><span class="p">,</span><span class="s2">&quot;AI&quot;</span><span class="p">,</span><span class="n">my_attendance</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ID=&quot;</span><span class="p">,</span> <span class="n">person1</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="s2">&quot;, Name = &quot;</span><span class="p">,</span><span class="n">person1</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;, Department = &quot;</span><span class="p">,</span> <span class="n">person1</span><span class="o">.</span><span class="n">department</span><span class="p">,</span><span class="s2">&quot;, Attendance = &quot;</span><span class="p">,</span><span class="n">person1</span><span class="o">.</span><span class="n">attendance</span><span class="p">)</span>
+  <span class="k">def</span> <span class="nf">update_attendance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">status</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">status</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+          <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Status must be 0 (Absent) or 1 (Present).&quot;</span><span class="p">)</span>
+          <span class="k">return</span>
+    <span class="k">if</span> <span class="n">date</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">attendance</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">attendance</span><span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=</span> <span class="n">status</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Attendance updated for </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> on </span><span class="si">{</span><span class="n">date</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Date </span><span class="si">{</span><span class="n">date</span><span class="si">}</span><span class="s2"> not found.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">student1</span> <span class="o">=</span> <span class="n">Attendance</span><span class="p">(</span><span class="mi">123456</span><span class="p">,</span><span class="s2">&quot;Ewha Kim&quot;</span><span class="p">,</span><span class="s2">&quot;AI&quot;</span><span class="p">)</span>
+
+<span class="n">student1</span><span class="o">.</span><span class="n">mark_attendance</span><span class="p">(</span><span class="s2">&quot;2025-04-01&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">student1</span><span class="o">.</span><span class="n">mark_attendance</span><span class="p">(</span><span class="s2">&quot;2025-04-02&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">student1</span><span class="o">.</span><span class="n">mark_attendance</span><span class="p">(</span><span class="s2">&quot;2025-04-03&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">student1</span><span class="o">.</span><span class="n">view_attendance</span><span class="p">()</span>
+
+<span class="n">student1</span><span class="o">.</span><span class="n">update_attendance</span><span class="p">(</span><span class="s2">&quot;2025-04-02&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">student1</span><span class="o">.</span><span class="n">update_attendance</span><span class="p">(</span><span class="s2">&quot;2025-04-05&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">student1</span><span class="o">.</span><span class="n">view_attendance</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Attendance marked for Ewha Kim on 2025-04-01.
+Attendance marked for Ewha Kim on 2025-04-02.
+Attendance marked for Ewha Kim on 2025-04-03.
+Attendance record for Ewha Kim:
+Date: 2025-04-01, Status: Present
+Date: 2025-04-02, Status: Absent
+Date: 2025-04-03, Status: Present
+Attendance updated for Ewha Kim on 2025-04-02.
+Date 2025-04-05 not found.
+Attendance record for Ewha Kim:
+Date: 2025-04-01, Status: Present
+Date: 2025-04-02, Status: Present
+Date: 2025-04-03, Status: Present
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="practice-with-dictionaries">
+<h2>Practice With Dictionaries<a class="headerlink" href="#practice-with-dictionaries" title="Link to this heading">#</a></h2>
+<section id="use-a-dictionary-to-describe-your-outfit">
+<h3>Use a Dictionary to Describe Your Outfit<a class="headerlink" href="#use-a-dictionary-to-describe-your-outfit" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Outfit</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">top</span><span class="p">,</span> <span class="n">bottom</span><span class="p">,</span> <span class="n">shoes</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">top</span> <span class="o">=</span> <span class="n">top</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bottom</span> <span class="o">=</span> <span class="n">bottom</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">shoes</span> <span class="o">=</span> <span class="n">shoes</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">outfit</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;top&quot;</span><span class="p">:</span> <span class="n">top</span><span class="p">,</span>
+            <span class="s2">&quot;bottom&quot;</span><span class="p">:</span> <span class="n">bottom</span><span class="p">,</span>
+            <span class="s2">&quot;shoes&quot;</span><span class="p">:</span> <span class="n">shoes</span>
+        <span class="p">}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">accessories</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># dictionary to store accessories</span>
+
+    <span class="k">def</span> <span class="nf">add_accessory</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">accessory_name</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
+        <span class="c1"># adds an accessory with its color</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">accessories</span><span class="p">[</span><span class="n">accessory_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">color</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Added accessory: </span><span class="si">{</span><span class="n">accessory_name</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">color</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">update_outfit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">part</span><span class="p">,</span> <span class="n">new_item</span><span class="p">):</span>
+        <span class="c1"># updates a part of the outfit (top, bottom, shoes)</span>
+        <span class="k">if</span> <span class="n">part</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">outfit</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">outfit</span><span class="p">[</span><span class="n">part</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_item</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Updated </span><span class="si">{</span><span class="n">part</span><span class="si">}</span><span class="s2"> to: </span><span class="si">{</span><span class="n">new_item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">part</span><span class="si">}</span><span class="s2"> is not a valid outfit part.&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">display_outfit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># displays the full outfit including accessories</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current Outfit:&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">part</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">outfit</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- </span><span class="si">{</span><span class="n">part</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">accessories</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accessories:&quot;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">acc</span><span class="p">,</span> <span class="n">color</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">accessories</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- </span><span class="si">{</span><span class="n">acc</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">color</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No accessories added.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_outfit</span> <span class="o">=</span> <span class="n">Outfit</span><span class="p">(</span><span class="s2">&quot;T-shirt&quot;</span><span class="p">,</span> <span class="s2">&quot;Shorts&quot;</span><span class="p">,</span> <span class="s2">&quot;Sneakers&quot;</span><span class="p">)</span>
+
+<span class="n">my_outfit</span><span class="o">.</span><span class="n">add_accessory</span><span class="p">(</span><span class="s2">&quot;Hat&quot;</span><span class="p">,</span> <span class="s2">&quot;Navy&quot;</span><span class="p">)</span>
+<span class="n">my_outfit</span><span class="o">.</span><span class="n">add_accessory</span><span class="p">(</span><span class="s2">&quot;Watch&quot;</span><span class="p">,</span> <span class="s2">&quot;Silver&quot;</span><span class="p">)</span>
+
+<span class="n">my_outfit</span><span class="o">.</span><span class="n">update_outfit</span><span class="p">(</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="s2">&quot;Hoodie&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">my_outfit</span><span class="o">.</span><span class="n">display_outfit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Added accessory: Hat (Navy)
+Added accessory: Watch (Silver)
+Updated top to: Hoodie
+
+
+Current Outfit:
+- Top: Hoodie
+- Bottom: Shorts
+- Shoes: Sneakers
+Accessories:
+- Hat (Navy)
+- Watch (Silver)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 
@@ -634,13 +808,13 @@ document.write(`
             mode: "python"
         },
         kernelOptions: {
-            name: "python3",
+            name: "my-python3-kernel",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'my-python3-kernel'</script>
 
                 </article>
               
@@ -694,6 +868,10 @@ document.write(`
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionary">Dictionary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-with-dictionaries">Practice With Dictionaries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-a-dictionary-to-describe-your-outfit">Use a Dictionary to Describe Your Outfit</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
